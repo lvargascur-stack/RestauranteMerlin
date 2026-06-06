@@ -11,16 +11,29 @@ package model.elizabeth;
 public class Cliente {
     
     private int idCliente;
-    private String nombre;
+    private String nombres;
     private String telefono;
+    private String correo;
     
     public Cliente(){}
     
+    public Cliente(int idCliente, String nombres, String telefono, String correo){
+        this.idCliente= idCliente;
+        this.nombres= nombres;
+        this.telefono=telefono;
+        this.correo= correo;
+    }
+    
     public int getIdCliente() { return idCliente; }
     public void setIdCliente(int idCliente) { this.idCliente = idCliente; }
-    public String getNombre() { return nombre; }
-    public void setNombre(String nombre) { this.nombre = nombre; }
+    
+    public String getNombre() { return nombres; }
+    public void setNombre(String nombres) { this.nombres = nombres; }
+    
     public String getTelefono() { return telefono; }
     public void setTelefono(String telefono) { this.telefono = telefono; }
+    
+    public String getCorreo() { return correo;}
+    public void setCorreo(String correo) {this.correo = correo;}
     
 }
