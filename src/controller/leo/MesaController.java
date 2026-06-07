@@ -1,5 +1,6 @@
 package controller.leo;
 
+import model.elizabeth.Mesa;  // ✅ ESTA ES LA LÍNEA QUE FALTABA
 import dao.leo.MesaDAO;
 import java.util.List;
 

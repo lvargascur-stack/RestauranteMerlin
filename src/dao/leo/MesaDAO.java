@@ -1,5 +1,6 @@
 package dao.leo;
 
+import model.elizabeth.Mesa;  // ✅ IMPORTANTE: Agregado el import de la clase Mesa
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -28,8 +29,8 @@ public class MesaDAO {
                 Mesa mesa = new Mesa();
                 mesa.setIdMesa(rs.getInt("idMesa"));
                 mesa.setNumeroMesa(rs.getInt("numeroMesa"));
-                mesa.setCapacidadMesa(rs.getInt("capacidadMesa"));
-                mesa.setEstadoMesa(rs.getString("estadoMesa"));
+                mesa.setCapacidad(rs.getInt("capacidadMesa"));      // ✅ CORREGIDO: cambiado setCapacidadMesa por setCapacidad
+                mesa.setEstadoMesa(rs.getString("estadoMesa"));     // ✅ ESTÁ BIEN: setEstadoMesa existe en el modelo
                 mesas.add(mesa);
             }
         } catch (SQLException e) {
