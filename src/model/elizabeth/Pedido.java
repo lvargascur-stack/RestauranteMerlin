@@ -4,6 +4,8 @@
  */
 package model.elizabeth;
 
+import java.util.Date;
+
 /**
  *
  * @author Elizabeth
@@ -11,20 +13,45 @@ package model.elizabeth;
 public class Pedido {
     
     private int idPedido;
-    private int idCliente;
-    private String fecha;
+    private Date fechaPedido;
+    private String estado;
     private double total;
+    private int idCliente;
+    private int idMesa;
+    private int idEmpleado;
     
     public Pedido() {}
     
+    public Pedido(int idPedido, Date fechaPedido, String estado, double total, int idCliente, int idMesa, int idEmpleado){
+        this.idPedido = idPedido;
+        this.fechaPedido = fechaPedido;
+        this.estado = estado;
+        this.total = total;
+        this.idCliente = idCliente;
+        this.idMesa = idMesa;
+        this.idEmpleado = idEmpleado;
+        
+    }
+    
     public int getIdPedido() { return idPedido; }
     public void setIdPedido(int idPedido) { this.idPedido = idPedido; }
-    public int getIdCliente() { return idCliente; }
-    public void setIdCliente(int idCliente) { this.idCliente = idCliente; }
-    public String getFecha() { return fecha; }
-    public void setFecha(String fecha) { this.fecha = fecha; }
+
+    public Date getFechaPedido() { return fechaPedido; }
+    public void setFechaPedido(Date fechaPedido) { this.fechaPedido = fechaPedido; }
+
+    public String getEstado() { return estado; }
+    public void setEstado(String estado) { this.estado = estado; }
+
     public double getTotal() { return total; }
     public void setTotal(double total) { this.total = total; }
-    
-    
+
+    public int getIdCliente() { return idCliente; }
+    public void setIdCliente(int idCliente) { this.idCliente = idCliente; }
+
+    public int getIdMesa() { return idMesa; }
+    public void setIdMesa(int idMesa) { this.idMesa = idMesa; }
+
+    public int getIdEmpleado() { return idEmpleado; }
+    public void setIdEmpleado(int idEmpleado) { this.idEmpleado = idEmpleado; }
 }
+
