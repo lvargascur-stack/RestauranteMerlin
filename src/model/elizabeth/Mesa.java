@@ -30,8 +30,8 @@ public class Mesa {
     public int getNumeroMesa() { return numeroMesa; }
     public void setNumeroMesa(int numeroMesa) { this.numeroMesa = numeroMesa; }
     
-    public int getCapacidad() { return capacidad; }
-    public void setCapacidad(int capacidad) { this.capacidad = capacidad; }
+    public int getCapacidadMesa() { return capacidad; }
+    public void setCapacidadMesa(int capacidad) { this.capacidad = capacidad; }
     
     public String getEstadoMesa() { return estadoMesa; }
     public void setEstadoMesa(String estadoMesa) { this.estadoMesa = estadoMesa; }
