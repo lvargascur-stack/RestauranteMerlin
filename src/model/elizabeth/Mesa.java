@@ -11,16 +11,16 @@ package model.elizabeth;
 public class Mesa {
     private int idMesa;
     private int numeroMesa;
-    private int capacidadMesa;
+    private int capacidad;
     private String estadoMesa;
     
     public Mesa(){}
 
-    public Mesa(int idMesa, int numeroMesa, int capacidadMesa, String estadoMesa) {
+    public Mesa(int idMesa, int numeroMesa, int capacidad, String estadoMesa) {
     
         this.idMesa= idMesa;
         this.numeroMesa= numeroMesa;
-        this.capacidadMesa= capacidadMesa;
+        this.capacidad= capacidad;
         this.estadoMesa= estadoMesa;
     }
 
@@ -30,8 +30,8 @@ public class Mesa {
     public int getNumeroMesa() { return numeroMesa; }
     public void setNumeroMesa(int numeroMesa) { this.numeroMesa = numeroMesa; }
     
-    public int getCapacidadMesa() { return capacidadMesa; }
-    public void setCapacidadMesa(int capacidadMesa) { this.capacidadMesa = capacidadMesa; }
+    public int getCapacidad() { return capacidad; }
+    public void setCapacidad(int capacidad) { this.capacidad = capacidad; }
     
     public String getEstadoMesa() { return estadoMesa; }
     public void setEstadoMesa(String estadoMesa) { this.estadoMesa = estadoMesa; }
