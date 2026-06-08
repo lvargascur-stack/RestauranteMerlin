@@ -13,7 +13,7 @@ import java.sql.SQLException;
 public class ConexionBD {
     private static final String URL = "jdbc:sqlserver://localhost:1433;databaseName=RestauranteMerlin;encrypt=true;trustServerCertificate=true";
     private static final String USUARIO = "sa";
-    private static final String CONTRASEÑA = "tu_contraseña";
+    private static final String CONTRASEÑA = "Admin123*";
 
     /**
      * Establece la conexión con la base de datos.

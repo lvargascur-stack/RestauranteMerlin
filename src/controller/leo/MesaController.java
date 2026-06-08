@@ -1,8 +1,8 @@
 package controller.leo;
 
+import model.elizabeth.Mesa;  // ✅ ESTA ES LA LÍNEA QUE FALTABA
 import dao.leo.MesaDAO;
 import java.util.List;
-import model.elizabeth.Mesa;
 
 /**
  * Controlador para manejar la lógica de gestión de mesas.
