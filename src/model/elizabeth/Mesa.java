@@ -14,6 +14,10 @@ public class Mesa {
     private int capacidad;
     private String estadoMesa;
     
+    @Override
+public String toString() {
+    return "Mesa " + numeroMesa + " (Cap: " + capacidad + ")";
+}
     public Mesa(){}
 
     public Mesa(int idMesa, int numeroMesa, int capacidad, String estadoMesa) {
