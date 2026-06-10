@@ -5,21 +5,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-/**
- * Clase para manejar el acceso a datos de Usuario.
- * @author Vargas Curisinche, Leonel Wilverth
- * @version 1.0
- */
 public class UsuarioDAO {
-
-    /**
-     * Valida las credenciales de un usuario en la base de datos.
-     * @param usuario Nombre de usuario
-     * @param contrasena Contraseña del usuario
-     * @return true si las credenciales son correctas, false en caso contrario
-     */
     public static boolean validarLogin(String usuario, String contrasena) {
-        String sql = "SELECT * FROM Usuario WHERE nombreUsuario = ? AND contraseñaUsuario = ?";
+        String sql = "SELECT * FROM Usuario WHERE usuario = ? AND contraseña = ?";
         try (Connection conn = ConexionBD.getConnection();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
             pstmt.setString(1, usuario);
